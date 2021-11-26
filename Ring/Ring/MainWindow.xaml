@@ -1,0 +1,40 @@
+﻿<Window x:Class="Ring.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ring"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300 " WindowStyle="None" Topmost="True">
+    <Window.Resources>
+        <ControlTemplate  x:Key="btntemp">
+            <Grid >
+                <Ellipse Name="faceEllipse" Height="30" Width="90" Fill="{TemplateBinding Button.Background}"/>
+                <TextBlock Name="txtBlock" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </Grid >
+        </ControlTemplate >
+    </Window.Resources>
+    <Grid>
+        <Grid x:Name="setting1">
+            <TextBox Text="interval,snooze" Height="20" Width="100" HorizontalContentAlignment="Center" FontSize="10" BorderThickness="0"/>
+            <TextBox x:Name="tb1" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Margin="0,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
+            <Button x:Name="btnConfirm1" Content="confirm" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="0,130,0,0" Height="30" FontFamily="Cooper Black"/>
+        </Grid>
+        <Grid x:Name="setting2" Visibility="Collapsed">
+            <TextBox x:Name="tb2" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Margin="0,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
+            <Button x:Name="btnConfirm2" Content="confirm" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="0,130,0,0" Height="30" FontFamily="Cooper Black"/>
+        </Grid>
+        <Grid x:Name="Clock">
+            <Image Source="E:\data\Mine\Ring\Ring\bg.png"/>
+            <Button x:Name="btnReset" Content="RESET" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="46,133,157,0" Height="30" FontFamily="Cooper Black"/>
+            <Button x:Name="btnClock" Content="GOT IT" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="157,133,46,0" Height="30" FontFamily="Cooper Black"/>
+            <TextBox x:Name="tbClock" Height="50" Width="250" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="0"/>
+        </Grid>
+        <Grid x:Name="ringing" Visibility="Collapsed">
+            <Image Source="E:\data\Mine\Ring\Ring\bg.png"/>
+            <Button x:Name="btnWait" Content="Wait..." HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="157,133,46,0" Height="30" FontFamily="Candara Light"/>
+            <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Top" Width="89" Margin="46,133,157,0" Height="30" FontFamily="Cooper Black"/>
+            <Label x:Name="labR" Content="WATER" FontSize="30"  Width="200" Height="50" Margin="46,62,46,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Perpetua Titling MT" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>

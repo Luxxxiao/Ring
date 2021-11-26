@@ -1,0 +1,14 @@
+﻿<Page x:Class="Ring.mBtn"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ring"
+      mc:Ignorable="d" 
+      d:DesignHeight="30" d:DesignWidth="90"
+      Title="mBtn">
+
+    <Grid>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Width="90" Height="30" FontFamily="Cooper Black"/>
+    </Grid>
+</Page>
