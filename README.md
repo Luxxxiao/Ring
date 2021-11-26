@@ -1,0 +1,3 @@
+# Ring
+TinyRing...
+You can use this tinyRing to remind you to drink water or stand up for a walk every half an hour or 45 minutes (or any interval you want).
